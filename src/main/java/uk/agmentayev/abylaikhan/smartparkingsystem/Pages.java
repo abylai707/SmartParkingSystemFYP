@@ -8,16 +8,19 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 /**
- * class intentended fo keepeng all javafx forms in program
+ * class intentended fo keeping all javafx forms in program
  */
 public class Pages {
 
     private static final String LoginFXML = "login-page.fxml";
     private static final String MenuFXML = "menu-page.fxml";
 
+    private static final String PersonalDetailsFXML = "personal-details.fxml";
+
     //todo initialization by static init blocks instead of readPages()
     public static Scene login;
     public static Scene menu;
+    public static Scene personalDetails;
 
     static { // static initializung block
         try {
@@ -27,6 +30,9 @@ public class Pages {
 
             fxmlLoader = new FXMLLoader(SmartParkingApplication.class.getResource(MenuFXML));
             menu = new Scene(fxmlLoader.load(), 640, 480);
+
+            fxmlLoader = new FXMLLoader(SmartParkingApplication.class.getResource(PersonalDetailsFXML));
+            personalDetails = new Scene(fxmlLoader.load(), 640, 480);
 
             System.out.println("Forms read!");
         } catch (IOException e) {
