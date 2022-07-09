@@ -20,7 +20,9 @@ public class Pages {
     //todo initialization by static init blocks instead of readPages()
     public static Scene login;
     public static Scene menu;
-    public static Scene personalDetails;
+
+    //todo pd page
+    //public static Scene personalDetails;
 
     static { // static initializung block
         try {
@@ -31,8 +33,9 @@ public class Pages {
             fxmlLoader = new FXMLLoader(SmartParkingApplication.class.getResource(MenuFXML));
             menu = new Scene(fxmlLoader.load(), 640, 480);
 
-            fxmlLoader = new FXMLLoader(SmartParkingApplication.class.getResource(PersonalDetailsFXML));
-            personalDetails = new Scene(fxmlLoader.load(), 640, 480);
+            //todo pd page
+            //fxmlLoader = new FXMLLoader(SmartParkingApplication.class.getResource(PersonalDetailsFXML));
+            //personalDetails = new Scene(fxmlLoader.load(), 640, 480);
 
             System.out.println("Forms read!");
         } catch (IOException e) {
