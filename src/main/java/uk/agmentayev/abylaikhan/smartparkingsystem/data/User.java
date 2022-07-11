@@ -3,6 +3,19 @@ package uk.agmentayev.abylaikhan.smartparkingsystem.data;
 public class User {
     private int id;
     private String uname;
+    private String password;
+    private String first_name;
+    private String last_name;
+    private int brunel_id;
+
+    public User(int id, String uname, String password, String first_name, String last_name, int brunel_id) {
+        this.id = id;
+        this.uname = uname;
+        this.password = password;
+        this.first_name = first_name;
+        this.last_name = last_name;
+        this.brunel_id = brunel_id;
+    }
 
     public String getUname() {
         return uname;
@@ -11,11 +24,6 @@ public class User {
     public void setUname(String uname) {
         this.uname = uname;
     }
-
-    private String first_name;
-    private String last_name;
-    private int brunel_id;
-    private String password;
 
     public String getPassword() {
         return password;
@@ -33,7 +41,7 @@ public class User {
         this.id = id;
     }
 
-    public String getFirst_name() {
+    public String getFirstName() {
         return first_name;
     }
 
@@ -41,7 +49,7 @@ public class User {
         this.first_name = first_name;
     }
 
-    public String getLast_name() {
+    public String getLastName() {
         return last_name;
     }
 
@@ -49,7 +57,7 @@ public class User {
         this.last_name = last_name;
     }
 
-    public int getBrunel_id() {
+    public int getBrunelId() {
         return brunel_id;
     }
 
