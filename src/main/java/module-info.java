@@ -4,4 +4,6 @@ module uk.agmentayev.abylaikhan.smartparkingsystem {
 
     opens uk.agmentayev.abylaikhan.smartparkingsystem to javafx.fxml;
     exports uk.agmentayev.abylaikhan.smartparkingsystem;
+    exports uk.agmentayev.abylaikhan.smartparkingsystem.conrollers;
+    opens uk.agmentayev.abylaikhan.smartparkingsystem.conrollers to javafx.fxml;
 }

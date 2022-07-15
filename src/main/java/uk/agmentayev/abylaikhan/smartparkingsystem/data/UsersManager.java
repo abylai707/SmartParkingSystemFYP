@@ -57,6 +57,8 @@ public final class UsersManager {
                 f.write("pw:"); f.write(user.getPassword()); f.newLine();
                 f.write("fn:"); f.write(user.getFirstName()); f.newLine();
                 f.write("ln:"); f.write(user.getLastName()); f.newLine();
+                f.write("pn:"); f.write(user.getLastName()); f.newLine();
+                f.write("em:"); f.write(user.getLastName()); f.newLine();
                 f.write(USER_DELIMITER); f.newLine();
             }
         }

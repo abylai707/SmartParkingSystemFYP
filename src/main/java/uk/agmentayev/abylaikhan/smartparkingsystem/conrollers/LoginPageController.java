@@ -1,17 +1,15 @@
-package uk.agmentayev.abylaikhan.smartparkingsystem;
+package uk.agmentayev.abylaikhan.smartparkingsystem.conrollers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import uk.agmentayev.abylaikhan.smartparkingsystem.Pages;
 
 public class LoginPageController {
     @FXML
     private TextField userName;
 
-
-    @FXML
-    private Button buttonLogin;
 
     @FXML
     public void onLoginButtonAction() {
